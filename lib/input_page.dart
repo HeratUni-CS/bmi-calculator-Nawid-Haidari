@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'calculator_brain.dart';
+import 'components/icon_content.dart';
+import 'components/results_page.dart';
 import 'components/reusable_card.dart';
+import 'components/round_icon_button.dart';
 import 'constants.dart';
 
 enum Gender {
@@ -15,7 +19,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender selectedGender;
+  Gender selectedGender = Gender.female;
   int height = 180;
   int weight = 60;
   int age = 20;
