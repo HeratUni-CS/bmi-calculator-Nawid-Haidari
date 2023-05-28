@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'components/reusable_card.dart';
 import 'constants.dart';
@@ -206,9 +207,9 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          BottomButton(
-            buttonTitle: 'CALCULATE',
-            onTap: () {
+          ElevatedButton(
+            child: Text('CALCULATE'),
+            onPressed:  () {
               CalculatorBrain calc =
                   CalculatorBrain(height: height, weight: weight);
 
